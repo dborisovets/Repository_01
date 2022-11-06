@@ -35,6 +35,7 @@ class Program
         Console.WriteLine("Month = " + month);
         Console.WriteLine("Day = " + day);
     }
+
     private static void Task3() 
     {
         Console.Write("Enter any number:");
@@ -43,6 +44,7 @@ class Program
         result = result + result * 2;
         Console.WriteLine("Result = " + result);
     }
+
     private static void Task4() 
     {
         sbyte a = -34;
@@ -54,6 +56,7 @@ class Program
         bool g = true;
         int h = 0;
     }
+
     private static void Task5() 
     {
         Console.Write("Enter a value with short type:");
@@ -69,6 +72,7 @@ class Program
         string double_inputData = Console.ReadLine();
         double value3 = Convert.ToDouble(double_inputData);
     }
+
     private static void Task6() 
     {
         sbyte num = -5;
@@ -77,6 +81,7 @@ class Program
         Console.WriteLine($"Variable: {num}");
         Console.ReadLine();
     }
+
     private static void Task7() 
     {
         int num1, num2;
