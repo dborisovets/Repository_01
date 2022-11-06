@@ -12,6 +12,8 @@ class Program
         Task5();
         Task6();
         Task7();
+        Task8();
+        Task9();
     }
 
     private static void Task1() 
@@ -85,13 +87,62 @@ class Program
     private static void Task7() 
     {
         int num1, num2;
-        Console.Write("Input an number : ");
+        Console.Write("Input any number : ");
         num1 = Convert.ToInt32(Console.ReadLine());
         num2 = num1 % 2;
         if (num2 == 0)
             Console.WriteLine("{0} is an even integer.\n", num1);
         else
             Console.WriteLine("{0} is an odd integer.\n", num1);
+    }
+
+    private static void Task8()
+    {
+        Console.Write("Input any number : ");
+        int A = Convert.ToInt32(Console.ReadLine());
+        if (A < 50 & A != 37 & A >= 32)
+        {
+            Console.WriteLine("Working");
+        }
+        else if (A == 0 | A == 15)
+        {
+            Console.WriteLine("Working");
+        }
+        else
+        {
+            Console.WriteLine("Not working");
+        }
+
+    }
+
+    private static void Task9()
+    {
+        Console.Write("Input a first number : ");
+        int firstNumber = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Input a second number : ");
+        int secondNumber = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Input an arithmetic sign (* , / , - , +) : ");
+        char sign = Convert.ToChar(Console.ReadLine());
+        int result = 0;
+        switch (sign)
+        {
+            case '+':
+                result = firstNumber + secondNumber;
+                break;
+            case '-':
+                result = firstNumber - secondNumber;
+                break;
+            case '/':
+                result = firstNumber / secondNumber;
+                break;
+            case '*':
+                result = firstNumber * secondNumber;
+                break;
+            default:
+                Console.WriteLine("Unknow arithmetic sign!");
+                break;
+        }
+        Console.WriteLine(firstNumber + " " + sign + " " + secondNumber + " = " + result);
     }
 
 }
