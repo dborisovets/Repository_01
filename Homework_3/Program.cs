@@ -7,16 +7,16 @@ class Program
 
     static void Main(string[] args)
     {
-        Task1();
-        Task2();
-        Task3();
-        Task4();
-        Task5();
-        Task6();
-        Task7();
+        Task8();
+        Task9();
+        Task10();
+        Task11();
+        Task12();
+        Task13();
+        Task14();
     }
 
-    private static void Task1()
+    private static void Task8()
     {
         Console.Write("Enter a positive number:");
         string number = Console.ReadLine();
@@ -29,7 +29,7 @@ class Program
         Console.WriteLine(sum);
     }
 
-    private static void Task2()
+    private static void Task9()
     {
         int i = 1, n = 3, result;
         do
@@ -40,7 +40,7 @@ class Program
         } while (i <= 10);
     }
 
-    private static void Task3()
+    private static void Task10()
     {
         int[] numbers = new int[5] { 3, 5, 9, 8, 15 };
         int multiplication = 1;
@@ -51,7 +51,7 @@ class Program
         Console.WriteLine(multiplication);
     }
 
-    private static void Task4()
+    private static void Task11()
     {
         int counter = 0;
         int x = 2048;
@@ -64,7 +64,7 @@ class Program
         Console.WriteLine(counter);
     }
 
-    private static void Task5()
+    private static void Task12()
     {
         string[] worldsList = new[] { "World", "Buy", "Hello", "Buy" };
         int counter = 1;
@@ -80,7 +80,7 @@ class Program
         Console.WriteLine(counter);
     }
 
-    private static void Task6()
+    private static void Task13()
     {
           int[] numbers = new int[5] { 2, 4, 8, 10, 25 };
           int firstPosition = 0;
@@ -88,7 +88,7 @@ class Program
           Console.WriteLine(numbers[firstPosition] + numbers[lastPosition]);
     }
 
-    private static void Task7()
+    private static void Task14()
     {
           int[] numbers = new int[5] { 2, 4, 8, 10, 25 };
           int min = numbers[0];
