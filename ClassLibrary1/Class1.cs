@@ -4,21 +4,21 @@
     public class Employee
     {
         public string name;
-        public string last_name;
+        public string lastName;
         private string gender;
         private int age;
         private string position;
 
-        public Employee(string name, string last_name, string gender, int age, string position)
+        public Employee(string name, string lastName, string gender, int age, string position)
         {
             this.name = name;
-            this.last_name = last_name;
+            this.lastName = lastName;
             this.gender = gender;
             this.age = age;
             this.position = position;
         }
 
-        public Employee(string name, string last_name) { this.name = name; this.last_name = last_name; }
+        public Employee(string name, string last_name) { this.name = name; this.lastName = last_name; }
 
         public Employee() { }
 
@@ -30,10 +30,10 @@
 
         public void Work() { Console.WriteLine($"{name} is working"); }
 
-        public void Print_Short_Info() => Console.WriteLine($"Name: {name} age: {age}");
+        public void PrintShortInfo() => Console.WriteLine($"Name: {name} age: {age}");
 
-        public void Print_Full_Info() => Console
-            .WriteLine($"Name: {name} last_name: {last_name} gender:{gender} age: {age} position: {position}");
+        public void PrintFullInfo() => Console
+            .WriteLine($"Name: {name} last_name: {lastName} gender:{gender} age: {age} position: {position}");
     }
 
 }

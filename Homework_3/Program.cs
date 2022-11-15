@@ -14,7 +14,7 @@ namespace Company
 
             persons[2] = new Employee();
             persons[2].name = "Pasha";
-            persons[2].last_name = "Semashko";
+            persons[2].lastName = "Semashko";
             persons[2].Gender = "male";
             persons[2].Age = 32;
             persons[2].Position = "PM";
@@ -26,11 +26,11 @@ namespace Company
 
             foreach (Employee e in persons)
             {
-                e.Print_Full_Info();
+                e.PrintFullInfo();
             }
             persons[3].Work();
 
-            persons[2].Print_Short_Info();
+            persons[2].PrintShortInfo();
         }
     }
 }
