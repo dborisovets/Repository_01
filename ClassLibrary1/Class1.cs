@@ -59,7 +59,7 @@
         public virtual void PrintShortInfo() => Console.WriteLine($"Name: {name} age: {age}");
 
         public void PrintFullInfo() => Console
-            .WriteLine($"Name: {name} last_name: {lastName} gender:{gender} age: {age} ");
+            .WriteLine($"Name: {name} lastName: {lastName} gender:{gender} age: {age} ");
 
     }
 
