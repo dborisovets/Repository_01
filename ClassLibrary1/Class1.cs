@@ -1,39 +1,66 @@
-﻿namespace ClassLibrary_Employee
+﻿namespace ClassLibrary_Human
 {
 
-    public class Employee
+    public class Human
     {
-        public string name;
-        public string lastName;
-        private string gender;
+        private string name;
+        private string lastName;
+        private string gender; 
         private int age;
-        private string position;
+        private string dateOfBirth;
+        private string marriageStatus;
+        private string numberOfChildren;
+        private string education;
 
-        public Employee(string name, string lastName, string gender, int age, string position)
+        public Human(string name, string lastName, string gender, int age, 
+            string dateOfBirth, string marriageStatus, string numberOfChildren, string education)
         {
             this.name = name;
             this.lastName = lastName;
             this.gender = gender;
             this.age = age;
-            this.position = position;
+            this.dateOfBirth = dateOfBirth;
+            this.marriageStatus = marriageStatus;
+            this.numberOfChildren = numberOfChildren;
+            this.education = education;
         }
 
-        public Employee(string name, string last_name) { this.name = name; this.lastName = last_name; }
+        public Human(string name)
+        {
+            this.name = name;
+        }
 
-        public Employee() { }
+        public Human() { }
 
-        public string Gender { get => gender; set => gender = value; }
+        public Human(string name, string lastName, string gender, int age)
+        {
+            Name = name;
+            LastName = lastName;
+            Gender = gender;
+            Age = age;
+        }
 
-        public int Age { get => age; set => age = value; }
+        public string Name { get; set; }
 
-        public string Position { get => position; set => position = value; }
+        public string LastName { get; set; }
 
-        public void Work() { Console.WriteLine($"{name} is working"); }
+        public string Gender { get; set; }
 
-        public void PrintShortInfo() => Console.WriteLine($"Name: {name} age: {age}");
+        public int Age { get; set; }
+
+        public string DateOfBirth { get; set; }
+
+        public string MarriageStatus { get; set; }
+
+        public string NumberOfChildren { get; set; } 
+
+        public string Education { get; set; }
+
+        public virtual void PrintShortInfo() => Console.WriteLine($"Name: {name} age: {age}");
 
         public void PrintFullInfo() => Console
-            .WriteLine($"Name: {name} last_name: {lastName} gender:{gender} age: {age} position: {position}");
+            .WriteLine($"Name: {name} lastName: {lastName} gender:{gender} age: {age} ");
+
     }
 
 }
