@@ -28,7 +28,7 @@ namespace Company
             persons[3].Name = "Ali";
             persons[3].LastName = "Baba";
 
-            foreach (Employee e in persons)
+            foreach (Human e in persons)
             {
                 e.PrintShortInfo();
             }
